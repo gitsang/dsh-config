@@ -1,0 +1,13 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@gitsang/dsh-tui':
+        specifier: link:/home/sang/src/github.com/gitsang/dsh-tui
+        version: link:../../../src/github.com/gitsang/dsh-tui

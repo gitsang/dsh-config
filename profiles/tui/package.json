@@ -1,0 +1,15 @@
+{
+  "name": "dsh-profile-tui",
+  "private": true,
+  "dependencies": {
+    "@gitsang/dsh-tui": "link:/home/sang/src/github.com/gitsang/dsh-tui"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@gitsang/dsh-tui"
+      ]
+    }
+  }
+}
