@@ -1,0 +1,23 @@
+# ---- 私密信息（密钥/凭证）----
+.credentials.yaml
+*.credentials.yaml
+credentials*.yaml
+.env
+.env.*
+*.key
+*.pem
+
+# ---- 数据文件（运行时生成）----
+sessions/
+storages/
+*.sqlite
+*.sqlite3
+*.db
+
+# ---- 依赖 ----
+node_modules/
+.pnpm-store/
+
+# ---- 其他 ----
+.DS_Store
+*.log
