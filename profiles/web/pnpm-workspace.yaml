@@ -3,3 +3,5 @@ packages:
 
 nodeLinker: hoisted
 autoInstallPeers: false
+overrides:
+  '@gitsang/dsh-web-auth': link:../../../src/github.com/gitsang/dsh-web-auth

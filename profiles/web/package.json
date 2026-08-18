@@ -2,7 +2,7 @@
   "name": "dsh-profile-web",
   "private": true,
   "dependencies": {
-    "@gitsang/dsh-web-auth": "github:gitsang/dsh-web-auth"
+    "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth"
   },
   "dsh": {
     "profile": {
