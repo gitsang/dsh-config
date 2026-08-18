@@ -1,12 +1,15 @@
 {
   "name": "dsh-profile-web",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@gitsang/dsh-web-auth": "github:gitsang/dsh-web-auth"
+  },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
-        "@deepseek-ai/dsh-web-app"
+        "@deepseek-ai/dsh-web-app",
+        "@gitsang/dsh-web-auth"
       ]
     }
   }
