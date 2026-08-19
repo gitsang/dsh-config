@@ -178,7 +178,6 @@ llm-pi-ai:
 
 agent-default-model:
   provider: saigw
-  model: deepseek-v4-pro
-  reasoningEffort: max
+  model: deepseek-v4-flash
 agent-presets:
   default: minimal

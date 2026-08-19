@@ -2,6 +2,8 @@
   "name": "dsh-profile-web",
   "private": true,
   "dependencies": {
+    "@gitsang/dsh-fishing": "link:/home/sang/src/github.com/gitsang/dsh-fishing",
+    "@gitsang/dsh-game": "link:/home/sang/src/github.com/gitsang/dsh-game",
     "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth"
   },
   "dsh": {
@@ -9,7 +11,9 @@
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@deepseek-ai/dsh-web-app",
-        "@gitsang/dsh-web-auth"
+        "@gitsang/dsh-fishing",
+        "@gitsang/dsh-web-auth",
+        "@gitsang/dsh-game"
       ]
     }
   }

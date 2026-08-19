@@ -6,11 +6,18 @@ settings:
 
 overrides:
   '@gitsang/dsh-web-auth': link:../../../src/github.com/gitsang/dsh-web-auth
+  '@gitsang/dsh-fishing': link:../../../src/github.com/gitsang/dsh-fishing
 
 importers:
 
   .:
     dependencies:
+      '@gitsang/dsh-fishing':
+        specifier: link:../../../src/github.com/gitsang/dsh-fishing
+        version: link:../../../src/github.com/gitsang/dsh-fishing
+      '@gitsang/dsh-game':
+        specifier: link:/home/sang/src/github.com/gitsang/dsh-game
+        version: link:../../../src/github.com/gitsang/dsh-game
       '@gitsang/dsh-web-auth':
-        specifier: link:/home/sang/src/github.com/gitsang/dsh-web-auth
+        specifier: link:../../../src/github.com/gitsang/dsh-web-auth
         version: link:../../../src/github.com/gitsang/dsh-web-auth
