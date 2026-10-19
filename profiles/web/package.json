@@ -3,8 +3,8 @@
   "private": true,
   "dependencies": {
     "@gitsang/dsh-fishing": "link:/home/sang/src/github.com/gitsang/dsh-fishing",
-    "@gitsang/dsh-game": "link:/home/sang/src/github.com/gitsang/dsh-game",
-    "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth"
+    "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth",
+    "dsh-better-sidebar": "github:omdsh-dev/DSH-better-sidebar#main"
   },
   "dsh": {
     "profile": {
@@ -13,7 +13,7 @@
         "@deepseek-ai/dsh-web-app",
         "@gitsang/dsh-fishing",
         "@gitsang/dsh-web-auth",
-        "@gitsang/dsh-game"
+        "dsh-better-sidebar"
       ]
     }
   }

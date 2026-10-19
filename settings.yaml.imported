@@ -181,3 +181,8 @@ agent-default-model:
   model: deepseek-v4-flash
 agent-presets:
   default: minimal
+ui-theme:
+  preference: light
+dsh-better-sidebar:
+  titleBarScheme: web
+  titleBarCompat: false
