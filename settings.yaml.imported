@@ -20,17 +20,6 @@ llm-pi-ai:
             max: max
           compat:
             thinkingFormat: deepseek
-        - id: deepseek-flash
-          name: DeepSeek V4 Flash
-          contextWindow: 1000000
-          maxTokens: 384000
-          input: [ text ]
-          reasoningEfforts:
-            low: low
-            high: high
-            max: max
-          compat:
-            thinkingFormat: deepseek
 
     saigw-openai:
       displayName: SaiGW (Responses)
