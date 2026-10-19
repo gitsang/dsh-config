@@ -2,11 +2,32 @@
 # a top-level YAML array of loader patch entries (id-targeted config
 # overrides, disables, and insert lists; `!!js` expressions allowed).
 #
-# The SaiGW provider routes and the default model selection live in the
-# harness-home layer ($DSH_HOME/cordis.patch.yml) so every profile shares them;
-# that layer outranks this one, so restating them here only invites drift.
-- id: agent-default-model
-  name: "@deepseek-ai/dsh-agent-default-model"
+# Model routes and the default model selection live in the harness-home layer
+# ($DSH_HOME/cordis.patch.yml), which outranks this one. Restating them here
+# only creates a second copy that silently never applies.
+#
+# The rows below are browser-surface preferences from the old settings.yaml.
+# They live here rather than in the home layer because only the web profile
+# mounts these plugins; a home-layer patch naming a row another profile lacks
+# fails that profile's layer with `entry "<id>" not found`.
+
+# A later patch replaces a row's whole config, so the upstream defaults the row
+# still needs (`default: standard`) are restated alongside the override.
+- id: agent-preset-registry
+  name: '@deepseek-ai/dsh-agent-preset-registry'
   config:
-    provider: saigw
-    model: deepseek-v4-flash
+    default: minimal
+- id: ui-settings-general
+  name: '@deepseek-ai/dsh-client-ui-settings-general'
+  config:
+    welcomeNoticeVersion: 2026-08-13.1
+- id: ui-theme
+  name: '@deepseek-ai/dsh-client-ui-theme'
+  config:
+    preference: light
+
+# dsh-better-sidebar (`titleBarScheme: web`, `titleBarCompat: false`) is NOT
+# configured here. dsh 0.2.0-rc.2 skips that bundle because its declared peers
+# target 0.1.0-rc.8, so no such row mounts and patching it fails the layer with
+# `entry "dsh-better-sidebar" not found`. Re-add that row only once the bundle
+# itself loads.
