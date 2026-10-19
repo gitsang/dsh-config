@@ -1,9 +1,12 @@
 # Your patch layer for this dsh profile, applied after every bundle layer:
 # a top-level YAML array of loader patch entries (id-targeted config
 # overrides, disables, and insert lists; `!!js` expressions allowed).
+#
+# The SaiGW provider routes and the default model selection live in the
+# harness-home layer ($DSH_HOME/cordis.patch.yml) so every profile shares them;
+# that layer outranks this one, so restating them here only invites drift.
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
-    provider: deepseek-official
-    model: deepseek-flash
-    reasoningEffort: high
+    provider: saigw
+    model: deepseek-v4-flash

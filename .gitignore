@@ -10,6 +10,7 @@ credentials*.yaml
 # ---- 数据文件（运行时生成）----
 sessions/
 storages/
+workspaces/
 *.sqlite
 *.sqlite3
 *.db
