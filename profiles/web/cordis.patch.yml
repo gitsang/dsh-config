@@ -25,6 +25,11 @@
   name: '@deepseek-ai/dsh-client-ui-theme'
   config:
     preference: light
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: saigw
+    model: deepseek-flash
 
 # dsh-better-sidebar (`titleBarScheme: web`, `titleBarCompat: false`) is NOT
 # configured here. dsh 0.2.0-rc.2 skips that bundle because its declared peers
