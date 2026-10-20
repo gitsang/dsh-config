@@ -11,6 +11,8 @@ credentials*.yaml
 sessions/
 storages/
 workspaces/
+cache/
+mobile-access/
 daemon-resume.json
 *.sqlite
 *.sqlite3

@@ -1,0 +1,19 @@
+diff --git a/lib/client.js b/lib/client.js
+index e486565b11ff7a9e611a574c16ee5f803fa3f5f7..8f25ddf15193d8066aa5a07f6a436d6e9d8d0834 100644
+--- a/lib/client.js
++++ b/lib/client.js
+@@ -5976,9 +5976,14 @@ window.__ModuleLoader__.load({
+ 		* CGNAT, and arbitrary DNS names stay rejected so DNS rebinding
+ 		* cannot reach `/api/mobile-access`.
+ 		*/
++		/** Extra exact public hostnames allowed to show the desktop Mobile access panel. */
++		const LOCAL_ADMIN_EXTRA_HOSTNAMES = ["dsh.dev1.yl.c8g.top"];
+ 		function isLocalAdminHostname(hostname) {
+ 			const host = unwrapBrackets(hostname).trim().toLowerCase();
+ 			if (host === "localhost" || host === "::1") return true;
++			const configured = globalThis.__DSH_MOBILE_ADMIN_HOSTS__;
++			const extra = LOCAL_ADMIN_EXTRA_HOSTNAMES.concat(Array.isArray(configured) ? configured.map((value) => String(value).trim().toLowerCase()) : []);
++			if (extra.includes(host)) return true;
+ 			const octets = parseIpv4(host);
+ 			if (octets === void 0) return false;
+ 			return isLoopbackIpv4(octets) || isPrivateIpv4(octets) || isLinkLocalIpv4(octets);
