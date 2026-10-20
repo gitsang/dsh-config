@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@gitsang/dsh-no-preview-notice": "link:/home/sang/src/github.com/gitsang/dsh-no-preview-notice",
+    "@gitsang/dsh-permission-auto-default": "link:/home/sang/.dsh/workspaces/dsh-permission-auto-default",
     "@gitsang/dsh-reset-terminals": "link:/home/sang/src/github.com/gitsang/dsh-reset-terminals",
     "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth",
     "dsh-mobile": "^0.6.12",
@@ -25,7 +26,8 @@
         "@gitsang/dsh-reset-terminals",
         "@gitsang/dsh-no-preview-notice",
         "dsh-workbench",
-        "dsh-video-preview"
+        "dsh-video-preview",
+        "@gitsang/dsh-permission-auto-default"
       ]
     }
   }

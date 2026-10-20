@@ -18,6 +18,9 @@ importers:
       '@gitsang/dsh-no-preview-notice':
         specifier: link:/home/sang/src/github.com/gitsang/dsh-no-preview-notice
         version: link:../../../src/github.com/gitsang/dsh-no-preview-notice
+      '@gitsang/dsh-permission-auto-default':
+        specifier: link:/home/sang/.dsh/workspaces/dsh-permission-auto-default
+        version: link:../../workspaces/dsh-permission-auto-default
       '@gitsang/dsh-reset-terminals':
         specifier: link:/home/sang/src/github.com/gitsang/dsh-reset-terminals
         version: link:../../../src/github.com/gitsang/dsh-reset-terminals

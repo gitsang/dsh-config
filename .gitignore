@@ -13,6 +13,7 @@ storages/
 workspaces/
 cache/
 mobile-access/
+attachments/
 daemon-resume.json
 *.sqlite
 *.sqlite3
