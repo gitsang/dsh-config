@@ -40,7 +40,13 @@
       danger-full-access:
         sandbox: danger-full-access
         approval: never
-    defaultPreset: danger-full-access
+    defaultPreset: read-only
+- id: pi-bridge
+  disabled: false
+- id: ui-settings-general
+  name: "@deepseek-ai/dsh-client-ui-settings-general"
+  config:
+    welcomeNoticeVersion: 2026-09-28.1
 
 # dsh-better-sidebar (`titleBarScheme: web`, `titleBarCompat: false`) is NOT
 # configured here. dsh 0.2.0-rc.2 skips that bundle because its declared peers

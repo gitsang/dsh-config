@@ -2,13 +2,12 @@
   "name": "dsh-profile-web",
   "private": true,
   "dependencies": {
-    "@gitsang/dsh-no-preview-notice": "link:/home/sang/src/github.com/gitsang/dsh-no-preview-notice",
-    "@gitsang/dsh-permission-auto-default": "link:/home/sang/.dsh/workspaces/dsh-permission-auto-default",
-    "@gitsang/dsh-reset-terminals": "link:/home/sang/src/github.com/gitsang/dsh-reset-terminals",
+    "@gitsang/dsh-bridge": "link:/home/sang/src/github.com/gitsang/dsh-bridge",
+    "@gitsang/dsh-daemon": "link:/home/sang/src/github.com/gitsang/dsh-daemon",
+    "@gitsang/dsh-qol": "link:/home/sang/src/github.com/gitsang/dsh-qol",
     "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth",
-    "dsh-mobile": "^0.6.12",
     "dsh-video-preview": "https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz",
-    "dsh-workbench": "^0.16.1",
+    "dsh-web-mobile": "^3.2.0",
     "dshmarket": "^1.66.42"
   },
   "dsh": {
@@ -16,18 +15,17 @@
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@deepseek-ai/dsh-web-app",
-        "@gitsang/dsh-web-auth",
         "@deepseek-ai/dsh-experimental-agent-team-profile",
         "@deepseek-ai/dsh-experimental-auto-review",
         "@deepseek-ai/dsh-experimental-schedule-bundle",
         "@deepseek-ai/dsh-experimental-voice-input-bundle",
-        "dsh-mobile",
         "dshmarket",
-        "@gitsang/dsh-reset-terminals",
-        "@gitsang/dsh-no-preview-notice",
-        "dsh-workbench",
         "dsh-video-preview",
-        "@gitsang/dsh-permission-auto-default"
+        "dsh-web-mobile",
+        "@gitsang/dsh-daemon",
+        "@gitsang/dsh-web-auth",
+        "@gitsang/dsh-qol",
+        "@gitsang/dsh-bridge"
       ]
     }
   }

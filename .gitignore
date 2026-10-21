@@ -12,16 +12,22 @@ sessions/
 storages/
 workspaces/
 cache/
-mobile-access/
 attachments/
-daemon-resume.json
 *.sqlite
 *.sqlite3
 *.db
 
+# ---- Backup ----
+.backup-*
+
+# ---- Plugin 数据文件 ----
+speech-to-text/
+daemon-resume.json
+
 # ---- 依赖 ----
 node_modules/
 .pnpm-store/
+.plugin-manager/
 
 # ---- 其他 ----
 .DS_Store

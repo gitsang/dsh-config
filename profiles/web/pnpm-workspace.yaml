@@ -6,5 +6,3 @@ autoInstallPeers: false
 overrides:
   '@gitsang/dsh-web-auth': link:../../../src/github.com/gitsang/dsh-web-auth
   '@gitsang/dsh-fishing': link:../../../src/github.com/gitsang/dsh-fishing
-patchedDependencies:
-  dsh-mobile@0.6.12: patches/dsh-mobile@0.6.12.patch
