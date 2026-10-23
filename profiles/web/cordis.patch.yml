@@ -22,6 +22,7 @@
   name: '@deepseek-ai/dsh-client-ui-theme'
   config:
     preference: light
+    fontSize: 15
 - id: agent-default-model
   name: "@deepseek-ai/dsh-agent-default-model"
   config:
@@ -40,7 +41,7 @@
       danger-full-access:
         sandbox: danger-full-access
         approval: never
-    defaultPreset: read-only
+    defaultPreset: workspace-write
 - id: pi-bridge
   disabled: false
 - id: ui-settings-general

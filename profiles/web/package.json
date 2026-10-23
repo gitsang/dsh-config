@@ -4,11 +4,10 @@
   "dependencies": {
     "@gitsang/dsh-bridge": "link:/home/sang/src/github.com/gitsang/dsh-bridge",
     "@gitsang/dsh-daemon": "link:/home/sang/src/github.com/gitsang/dsh-daemon",
+    "@gitsang/dsh-gateway": "link:/home/sang/src/github.com/gitsang/dsh-gateway",
     "@gitsang/dsh-qol": "link:/home/sang/src/github.com/gitsang/dsh-qol",
-    "@gitsang/dsh-web-auth": "link:/home/sang/src/github.com/gitsang/dsh-web-auth",
     "dsh-video-preview": "https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz",
-    "dsh-web-mobile": "^3.2.0",
-    "dshmarket": "^1.66.42"
+    "dsh-web-mobile": "^3.2.0"
   },
   "dsh": {
     "profile": {
@@ -19,11 +18,10 @@
         "@deepseek-ai/dsh-experimental-auto-review",
         "@deepseek-ai/dsh-experimental-schedule-bundle",
         "@deepseek-ai/dsh-experimental-voice-input-bundle",
-        "dshmarket",
         "dsh-video-preview",
         "dsh-web-mobile",
         "@gitsang/dsh-daemon",
-        "@gitsang/dsh-web-auth",
+        "@gitsang/dsh-gateway",
         "@gitsang/dsh-qol",
         "@gitsang/dsh-bridge"
       ]
