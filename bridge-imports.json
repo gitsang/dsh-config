@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "bridges": {
+    "pi-local": {
+      "sessionKeys": [
+        "L2hvbWUvc2FuZy8ucGkvYWdlbnQvc2Vzc2lvbnMvLS1ob21lLXNhbmctc3JjLWdpdGNvZGUueWVhbGluay5jb20tc2VydmVyLWluZnJhLXNlY3VyaXR5LXl2YXVsdC1wbGF0Zm9ybS1jZC0tLzIwMjYtMTAtMjdUMDgtMTctMzItNTU2Wl8wMWExN2M2Zi05ZjhiLTcxYTUtYWVhNC1kYzQ1NjVhYzgzNWMuanNvbmw"
+      ]
+    }
+  }
+}

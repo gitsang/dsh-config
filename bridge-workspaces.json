@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "bridges": {
+    "pi-local": {
+      "workspaces": [
+        {
+          "id": "e54e0aa5-b2ee-4517-8fd5-af18ed8367df",
+          "path": "/home/sang/src/gitcode.yealink.com/server/infra/security/yvault-platform-cd",
+          "name": "yvault-platform-cd",
+          "createdAt": "2026-10-29T01:24:28.085Z",
+          "updatedAt": "2026-10-29T01:24:28.085Z",
+          "deletedAt": null
+        }
+      ]
+    }
+  }
+}
