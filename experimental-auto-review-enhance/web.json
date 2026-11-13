@@ -1,4 +1,5 @@
 {
   "defaultPreset": "auto",
-  "reviewLanguage": "zh"
+  "reviewLanguage": "zh",
+  "reviewReasonToModel": true
 }

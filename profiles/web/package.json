@@ -17,6 +17,7 @@
         "@deepseek-ai/dsh-experimental-agent-team-profile",
         "@deepseek-ai/dsh-experimental-auto-review",
         "@deepseek-ai/dsh-experimental-voice-input-bundle",
+        "@deepseek-ai/dsh-experimental-inspector-profile",
         "dsh-video-preview",
         "dsh-web-mobile",
         "@gitsang/dsh-daemon",

@@ -69,6 +69,25 @@
               low: low
               medium: medium
               high: high
+      yealink:
+        displayName: Yealink
+        apiKeyEnv: YEALINK_API_KEY
+        api: openai-completions
+        baseURL: https://yllm.worklink.work/yllm/v1
+        models:
+          - id: deepseek-flash
+            name: Deepseek Flash
+            contextWindow: 1000000
+            maxTokens: 384000
+            input:
+              - text
+              - image
+            reasoningEfforts:
+              low: low
+              high: high
+              max: max
+            compat:
+              thinkingFormat: deepseek
 
 - id: agent-default-model
   name: '@deepseek-ai/dsh-agent-default-model'
