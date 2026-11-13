@@ -16,6 +16,7 @@ attachments/
 *.sqlite
 *.sqlite3
 *.db
+bridge*
 
 # ---- Backup ----
 .backup-*
