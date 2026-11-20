@@ -1,0 +1,26 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@gitsang/dsh-gateway':
+        specifier: ^0.3.0
+        version: 0.3.0
+
+packages:
+
+  '@gitsang/dsh-gateway@0.3.0':
+    resolution: {integrity: sha512-gJ722aW3PTa5Bu3e7hSJK/F+HfyvCmFMRXCAKeymVke2v2s7u0I+SZNhT8m9rqBnZ3OunUDQUCga+pCve/6O7w==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+
+snapshots:
+
+  '@gitsang/dsh-gateway@0.3.0': {}

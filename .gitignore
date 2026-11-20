@@ -24,6 +24,9 @@ bridge*
 # ---- Plugin 数据文件 ----
 speech-to-text/
 daemon-resume.json
+profiles/gateway/auth.json
+profiles/gateway/session.json
+profiles/gateway/settings.json
 
 # ---- 依赖 ----
 node_modules/

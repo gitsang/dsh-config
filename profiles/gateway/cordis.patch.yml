@@ -1,0 +1,3 @@
+# Profile-level overrides for the standalone gateway profile.
+# The gateway row itself comes from the @gitsang/dsh-gateway bundle patch.
+[]

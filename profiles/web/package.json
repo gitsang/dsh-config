@@ -2,10 +2,10 @@
   "name": "dsh-profile-web",
   "private": true,
   "dependencies": {
-    "@gitsang/dsh-bridge": "link:/home/sang/src/github.com/gitsang/dsh-bridge",
-    "@gitsang/dsh-daemon": "link:/home/sang/src/github.com/gitsang/dsh-daemon",
-    "@gitsang/dsh-gateway": "link:/home/sang/src/github.com/gitsang/dsh-gateway",
-    "@gitsang/dsh-qol": "link:/home/sang/src/github.com/gitsang/dsh-qol",
+    "@gitsang/dsh-bridge": "^0.4.0",
+    "@gitsang/dsh-daemon": "^0.2.0",
+    "@gitsang/dsh-gateway": "^0.3.0",
+    "@gitsang/dsh-qol": "^0.1.0",
     "dsh-video-preview": "https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz",
     "dsh-web-mobile": "^3.2.0"
   },

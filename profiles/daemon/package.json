@@ -2,7 +2,7 @@
   "name": "dsh-profile-daemon",
   "private": true,
   "dependencies": {
-    "@gitsang/dsh-daemon": "link:/home/sang/src/github.com/gitsang/dsh-daemon"
+    "@gitsang/dsh-daemon": "^0.2.0"
   },
   "dsh": {
     "profile": {

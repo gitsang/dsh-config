@@ -4,26 +4,22 @@ settings:
   autoInstallPeers: false
   excludeLinksFromLockfile: false
 
-overrides:
-  '@gitsang/dsh-gateway': link:../../../src/github.com/gitsang/dsh-gateway
-  '@gitsang/dsh-fishing': link:../../../src/github.com/gitsang/dsh-fishing
-
 importers:
 
   .:
     dependencies:
       '@gitsang/dsh-bridge':
-        specifier: link:/home/sang/src/github.com/gitsang/dsh-bridge
-        version: link:../../../src/github.com/gitsang/dsh-bridge
+        specifier: ^0.4.0
+        version: 0.4.0
       '@gitsang/dsh-daemon':
-        specifier: link:/home/sang/src/github.com/gitsang/dsh-daemon
-        version: link:../../../src/github.com/gitsang/dsh-daemon
+        specifier: ^0.2.0
+        version: 0.2.0
       '@gitsang/dsh-gateway':
-        specifier: link:../../../src/github.com/gitsang/dsh-gateway
-        version: link:../../../src/github.com/gitsang/dsh-gateway
+        specifier: ^0.3.0
+        version: 0.3.0
       '@gitsang/dsh-qol':
-        specifier: link:/home/sang/src/github.com/gitsang/dsh-qol
-        version: link:../../../src/github.com/gitsang/dsh-qol
+        specifier: ^0.1.0
+        version: 0.1.0
       dsh-video-preview:
         specifier: https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz
         version: https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz
@@ -32,6 +28,85 @@ importers:
         version: 3.2.0
 
 packages:
+
+  '@deepseek-ai/dsh-cmdline@0.1.0-rc.8':
+    resolution: {integrity: sha512-xsnNFm2XpMD9wpBBLq80x8yXTi664DHywkLwxgAhDsWyp9tB2aSWaWVKxugPWSWwrB3F4nfloWqaeUfgXRFtBQ==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/cordis-plugin-loader': ^1.0.2
+      '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
+
+  '@gitsang/dsh-bridge@0.4.0':
+    resolution: {integrity: sha512-YOHVHpbf/YhL8b7GKrnmyFPWcTuNnKGef94PnQPOGs33exjscq3vGZhdD2E64FZF51OhvbO/4ILP4MmIoDMWrg==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.2 <0.3.0-0'
+      react: ^18.2.0
+
+  '@gitsang/dsh-daemon@0.2.0':
+    resolution: {integrity: sha512-a0Eo4XgTdi8zK46lSGlh7px82hrJT7p0j0WONXtw/2S1QU0m2cF1pS0ZXEFYwo5QsBEKd2oHFtnCenDq0pJaPw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      react: ^18.2.0
+
+  '@gitsang/dsh-enter-swap@0.1.0':
+    resolution: {integrity: sha512-95DdOC4HToouj7Sbpa+/KhkE7iK5WCPH9gfVnW8kSW5DWywwxP3Ld0ov58LyR1Km2rcictSxGcbMJO5wc+dq4A==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      react: ^18.2.0
+
+  '@gitsang/dsh-experimental-auto-review-enhance@0.1.0':
+    resolution: {integrity: sha512-I8dHGzBruAF0qI+ft/RxFKy8+EDLyUT8g8ktHwkFrmKtPXMaZaz0Zzm6U4LeXQYlJjHf4OVzjv7vZFKXmlOkMw==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+      react: ^18.2.0
+
+  '@gitsang/dsh-gateway@0.3.0':
+    resolution: {integrity: sha512-gJ722aW3PTa5Bu3e7hSJK/F+HfyvCmFMRXCAKeymVke2v2s7u0I+SZNhT8m9rqBnZ3OunUDQUCga+pCve/6O7w==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.1
+      '@deepseek-ai/schemastery': ^3.18.1
+      react: ^18.2.0
+
+  '@gitsang/dsh-no-preview-notice@0.1.0':
+    resolution: {integrity: sha512-GenMy/ZZfu0ohgtdu6shSw76ooTlCWp1/RZQsDzHbcUv2+wLv9Lx+Ic9Gs4hCqJw4ruGw9xzPv9aecg+Disx7A==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      react: ^18.2.0
+
+  '@gitsang/dsh-qol@0.1.0':
+    resolution: {integrity: sha512-RVQ76A2EGSOJXA6bTkxwVngmiZV4bGMhxzZsCO3rh+Lr2F2CDMNu/bNG/S+JuU6SJHgQA+61JcqFtYbljAAoNQ==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+
+  '@gitsang/dsh-reset-terminals@0.1.0':
+    resolution: {integrity: sha512-zVorYdxi/tELOPcnp47AO8LjELiS26BpydbrlE4rDCxtKs0XX4OPtLrzp/YuKhmIIwwoNSJwrVEM3AgrSzlW+A==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.4
+
+  '@gitsang/dsh-session-tree@0.1.0':
+    resolution: {integrity: sha512-6TpfWtqEvK54JNOnvXd6kWgkMd8pz7+15anvAPWG/ZlDe/CGC8Z8oSDwM+NZrkFRewpNfIcvjbzhoGBHQUmd8w==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  '@gitsang/dsh-sidebar-terminal-enhance@0.1.0':
+    resolution: {integrity: sha512-i7CkCke8Tkhi98qlvV/ApkNQVUghUWW//3bmzK1MRdu2LTS9XIS1EAw7B/e0uCPQyvm1G81tRP+UlyuAWwwOsg==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      react: ^18.2.0
+
+  '@gitsang/dsh-statusline@0.2.0':
+    resolution: {integrity: sha512-I5/FY2OfSnW/ADMR5GMtQ84vhwzzqvO8igLt66zzXMjkPQ0iv6ORsBglk7widGz9f1htixIZ2qLaOJ9N0avYew==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ~4.0.4
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
+    engines: {node: '>=22.12.0'}
 
   dsh-video-preview@https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz:
     resolution: {integrity: sha512-Oxi094bePbh0Yj/wHo4Hi1qNuEETawE6wtnStfko4MX1MSNkorFtqBTXyCqb/C2w7MAC99sCBZvpgjQVUyL8zQ==, tarball: https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz}
@@ -63,6 +138,49 @@ packages:
         optional: true
 
 snapshots:
+
+  '@deepseek-ai/dsh-cmdline@0.1.0-rc.8': {}
+
+  '@gitsang/dsh-bridge@0.4.0': {}
+
+  '@gitsang/dsh-daemon@0.2.0':
+    dependencies:
+      '@deepseek-ai/dsh-cmdline': 0.1.0-rc.8
+      commander: 15.1.0
+    transitivePeerDependencies:
+      - '@deepseek-ai/cordis-plugin-loader'
+      - '@deepseek-ai/dsh-invariants'
+
+  '@gitsang/dsh-enter-swap@0.1.0': {}
+
+  '@gitsang/dsh-experimental-auto-review-enhance@0.1.0': {}
+
+  '@gitsang/dsh-gateway@0.3.0': {}
+
+  '@gitsang/dsh-no-preview-notice@0.1.0': {}
+
+  '@gitsang/dsh-qol@0.1.0':
+    dependencies:
+      '@gitsang/dsh-enter-swap': 0.1.0
+      '@gitsang/dsh-experimental-auto-review-enhance': 0.1.0
+      '@gitsang/dsh-no-preview-notice': 0.1.0
+      '@gitsang/dsh-reset-terminals': 0.1.0
+      '@gitsang/dsh-session-tree': 0.1.0
+      '@gitsang/dsh-sidebar-terminal-enhance': 0.1.0
+      '@gitsang/dsh-statusline': 0.2.0
+    transitivePeerDependencies:
+      - react
+      - react-dom
+
+  '@gitsang/dsh-reset-terminals@0.1.0': {}
+
+  '@gitsang/dsh-session-tree@0.1.0': {}
+
+  '@gitsang/dsh-sidebar-terminal-enhance@0.1.0': {}
+
+  '@gitsang/dsh-statusline@0.2.0': {}
+
+  commander@15.1.0: {}
 
   dsh-video-preview@https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz: {}
 

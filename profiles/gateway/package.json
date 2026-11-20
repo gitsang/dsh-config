@@ -1,0 +1,1 @@
+{"name": "dsh-profile-gateway", "private": true, "dependencies": {"@gitsang/dsh-gateway": "^0.3.0"}, "dsh": {"profile": {"bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "@gitsang/dsh-gateway"]}}}

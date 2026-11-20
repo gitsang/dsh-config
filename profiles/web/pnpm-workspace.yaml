@@ -3,6 +3,15 @@ packages:
 
 nodeLinker: hoisted
 autoInstallPeers: false
-overrides:
-  '@gitsang/dsh-gateway': link:../../../src/github.com/gitsang/dsh-gateway
-  '@gitsang/dsh-fishing': link:../../../src/github.com/gitsang/dsh-fishing
+minimumReleaseAgeExclude:
+  - '@gitsang/dsh-bridge@0.4.0'
+  - '@gitsang/dsh-daemon@0.2.0'
+  - '@gitsang/dsh-enter-swap@0.1.0'
+  - '@gitsang/dsh-experimental-auto-review-enhance@0.1.0'
+  - '@gitsang/dsh-gateway@0.3.0'
+  - '@gitsang/dsh-no-preview-notice@0.1.0'
+  - '@gitsang/dsh-qol@0.1.0'
+  - '@gitsang/dsh-reset-terminals@0.1.0'
+  - '@gitsang/dsh-session-tree@0.1.0'
+  - '@gitsang/dsh-sidebar-terminal-enhance@0.1.0'
+  - '@gitsang/dsh-statusline@0.2.0'
