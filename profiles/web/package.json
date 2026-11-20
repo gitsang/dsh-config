@@ -2,8 +2,8 @@
   "name": "dsh-profile-web",
   "private": true,
   "dependencies": {
-    "@gitsang/dsh-bridge": "^0.4.0",
-    "@gitsang/dsh-daemon": "^0.2.0",
+    "@gitsang/dsh-bridge": "^0.4.1",
+    "@gitsang/dsh-daemon": "^0.2.1",
     "@gitsang/dsh-gateway": "^0.3.0",
     "@gitsang/dsh-qol": "^0.1.0",
     "dsh-video-preview": "https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz",

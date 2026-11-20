@@ -4,4 +4,4 @@ packages:
 nodeLinker: hoisted
 autoInstallPeers: false
 minimumReleaseAgeExclude:
-  - '@gitsang/dsh-daemon@0.2.0'
+  - '@gitsang/dsh-daemon@0.2.0 || 0.2.1'

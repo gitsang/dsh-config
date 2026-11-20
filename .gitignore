@@ -7,23 +7,31 @@ credentials*.yaml
 *.key
 *.pem
 
-# ---- 数据文件（运行时生成）----
+# ---- 数据文件（运行时生成，官方布局）----
 sessions/
 storages/
 workspaces/
 cache/
 attachments/
+logs/
+.anonymous-user-id
 *.sqlite
 *.sqlite3
 *.db
-bridge*
 
 # ---- Backup ----
 .backup-*
 
-# ---- Plugin 数据文件 ----
+# ---- Plugin 数据目录（每插件一个目录，官方模式）----
+bridge/
+daemon/
 speech-to-text/
+experimental-auto-review-enhance/
+# 旧版平铺文件（迁移前的残留，防误提交）
+bridge*.json
 daemon-resume.json
+permission-auto/
+# gateway 的 profile 私有运行时数据
 profiles/gateway/auth.json
 profiles/gateway/session.json
 profiles/gateway/settings.json

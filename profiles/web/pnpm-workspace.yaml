@@ -4,8 +4,8 @@ packages:
 nodeLinker: hoisted
 autoInstallPeers: false
 minimumReleaseAgeExclude:
-  - '@gitsang/dsh-bridge@0.4.0'
-  - '@gitsang/dsh-daemon@0.2.0'
+  - '@gitsang/dsh-bridge@0.4.0 || 0.4.1'
+  - '@gitsang/dsh-daemon@0.2.0 || 0.2.1'
   - '@gitsang/dsh-enter-swap@0.1.0'
   - '@gitsang/dsh-experimental-auto-review-enhance@0.1.0'
   - '@gitsang/dsh-gateway@0.3.0'

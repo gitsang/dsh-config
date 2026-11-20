@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@gitsang/dsh-bridge':
-        specifier: ^0.4.0
-        version: 0.4.0
+        specifier: ^0.4.1
+        version: 0.4.1
       '@gitsang/dsh-daemon':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       '@gitsang/dsh-gateway':
         specifier: ^0.3.0
         version: 0.3.0
@@ -36,15 +36,15 @@ packages:
       '@deepseek-ai/cordis-plugin-loader': ^1.0.2
       '@deepseek-ai/dsh-invariants': ^0.1.0-rc.8
 
-  '@gitsang/dsh-bridge@0.4.0':
-    resolution: {integrity: sha512-YOHVHpbf/YhL8b7GKrnmyFPWcTuNnKGef94PnQPOGs33exjscq3vGZhdD2E64FZF51OhvbO/4ILP4MmIoDMWrg==}
+  '@gitsang/dsh-bridge@0.4.1':
+    resolution: {integrity: sha512-LSEsYKzEDZnMWOk/Y33htD2gi1KzuEf5PQJECqJqJ+b6JYdG7hoHC1fX9nYyplxcCGOdaEI1yn7MVU55s2Y/CQ==}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.4
       '@deepseek-ai/dsh-client-ui-primitives': '>=0.2.0-rc.2 <0.3.0-0'
       react: ^18.2.0
 
-  '@gitsang/dsh-daemon@0.2.0':
-    resolution: {integrity: sha512-a0Eo4XgTdi8zK46lSGlh7px82hrJT7p0j0WONXtw/2S1QU0m2cF1pS0ZXEFYwo5QsBEKd2oHFtnCenDq0pJaPw==}
+  '@gitsang/dsh-daemon@0.2.1':
+    resolution: {integrity: sha512-Fk5CUvr3T3OYEs4+T/gOdZcLXTVNOGU3F2U0pHcFhCR9fUuNV2bpba74goZ8an33HkUZlrHtLTEiykL3wq62Qw==}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.4
       react: ^18.2.0
@@ -141,9 +141,9 @@ snapshots:
 
   '@deepseek-ai/dsh-cmdline@0.1.0-rc.8': {}
 
-  '@gitsang/dsh-bridge@0.4.0': {}
+  '@gitsang/dsh-bridge@0.4.1': {}
 
-  '@gitsang/dsh-daemon@0.2.0':
+  '@gitsang/dsh-daemon@0.2.1':
     dependencies:
       '@deepseek-ai/dsh-cmdline': 0.1.0-rc.8
       commander: 15.1.0
