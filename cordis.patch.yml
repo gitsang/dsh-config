@@ -29,7 +29,9 @@
               - image
             reasoningEfforts:
               low: low
+              medium: medium
               high: high
+              xhigh: xhigh
               max: max
           - id: deepseek
             name: Deepseek
@@ -40,7 +42,9 @@
               - image
             reasoningEfforts:
               low: low
+              medium: medium
               high: high
+              xhigh: xhigh
               max: max
             compat:
               thinkingFormat: deepseek
@@ -53,7 +57,9 @@
               - image
             reasoningEfforts:
               low: low
+              medium: medium
               high: high
+              xhigh: xhigh
               max: max
       saigw-openai:
         displayName: SaiGW (Responses)
@@ -61,8 +67,8 @@
         api: openai-responses
         baseURL: https://aigw.cn.c8g.top/v1
         models:
-          - id: gpt-6.1-sol
-            name: GPT 6.1 Sol
+          - id: gpt
+            name: GPT
             contextWindow: 400000
             maxTokens: 128000
             input:
@@ -73,24 +79,26 @@
               medium: medium
               high: high
               xhigh: xhigh
+              max: max
       saigw-anthropic:
-        displayName: SaiGW (Anthropic)
+        displayName: SaiGW (Messages)
         apiKeyEnv: SAIGW_API_KEY
         api: anthropic-messages
         baseURL: https://aigw.cn.c8g.top/anthropic
         models:
-          - id: claude-opus
-            name: Claude Opus
-            contextWindow: 1048576
+          - id: claude
+            name: Claude
+            contextWindow: 1000000
             maxTokens: 128000
             input:
               - text
               - image
             reasoningEfforts:
-              minimal: low
               low: low
               medium: medium
               high: high
+              xhigh: xhigh
+              max: max
       yealink:
         displayName: Yealink
         apiKeyEnv: YEALINK_API_KEY
