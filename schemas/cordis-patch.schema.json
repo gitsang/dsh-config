@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://deepseek-ai.local/schemas/dsh-cordis-patch.json",
+  "title": "dsh cordis loader patch",
+  "description": "A top-level YAML array of dsh/cordis loader patch entries (id-targeted config overrides, disables, and insert lists). NOT RFC 6902 JSON Patch. See cordis-plugin-include applyEntryPatches().",
+  "type": "array",
+  "items": { "$ref": "#/definitions/patchEntry" },
+  "definitions": {
+    "entryRow": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string", "description": "Row id, unique within the composed entry list." },
+        "name": { "type": "string", "description": "Plugin package name (must match the targeted row's name)." },
+        "disabled": { "type": "boolean" },
+        "group": { "type": "boolean" },
+        "config": {
+          "description": "Plugin config object, or an array of child rows when group: true.",
+          "type": ["object", "array"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "patchEntry": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Target row id (required for non-insert patches)." },
+        "name": { "type": "string", "description": "Expected plugin name of the target row; mismatch skips the patch." },
+        "insert": {
+          "type": "array",
+          "description": "Rows to append: into the group identified by id, or at top level when id is absent.",
+          "items": { "$ref": "#/definitions/entryRow" }
+        },
+        "config": {
+          "description": "Replacement config for the target row (replaces the whole config).",
+          "type": ["object", "array", "null"]
+        },
+        "disabled": { "type": "boolean" }
+      },
+      "additionalProperties": true,
+      "anyOf": [
+        { "required": ["id"] },
+        { "required": ["insert"] }
+      ]
+    }
+  }
+}
